@@ -1,0 +1,25 @@
+.no-landscape {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@media (orientation: portrait) {
+  .no-landscape {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
